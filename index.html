@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alpha Vantage</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <main class="container jumbotron">
+      <h1>Alpha Vantage: Assignment 01</h1>
+    <form class="frm stocks">
+      <label for="symbol" ><p class="para">Symbol:</p> </label>
+      <input type="text" class="sym form-control" id="symbol" name="symbol" value="Ex:BDST">
+      <button class="btn btn-primary" type="submit">Get Item Data</button>
+    </form>
+
+    <section class="stock-display">
+      <h2>Stock Update</h2>
+      <div class="details"><p class="p">Symbol: </p>= <span class="symbol"></span></div>
+      <div class="details"><p class="p">OS:</p> = $<span class="price"></span></div>
+      <div class="details"><p class="p">LTR:</p>= <span class="volume"></span></div>
+      <div class="details"><p class="p">Current date:</p>= <span class="currentDate"></span></div>
+      <div class="details"><p class="p">Change:</p>= <span class="change"></span></div>
+      <div class="details"><p class="p">Change Percent:</p>= <span class="change-percent"></span></div>
+      <div class="details"><p class="p">Previous close:</p> = $<span class="previous"></span></div>
+      <div class="details"><p class="p">Open:</p> = $<span class="open"></span></div>
+      <div class="details"><p class="p">High:</p> = $<span class="high"></span></div>
+      <div class="details"><p class="p">Low:</p> = $<span class="low"></span></div>
+      <div class="details"><p class="p">LTRN:</p> = <span class="timereset"></span></div>
+
+      <div class="details"><p class="p">newData:</p> = <span class="newdata"></span></div>
+
+    </section>
+    </main>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
+    
+
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
